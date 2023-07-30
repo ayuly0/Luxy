@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="guna2BorderlessForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAMMOAADDDgAAAAAAAAAA
+        AAAgEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBMU/yATE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yAVFf8gDQ//IA8R/yATE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yAUFP8gExT/HwMJ/yEtJf8hLSb/IA0Q/yATFP8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yATE/8gFRX/IAsO/yALDv8iYkj/JIBd/yAVFf8gERL/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gFRX/IBAS/yAGC/8hMij/JJlt/yWxff8gHBr/IAwP/yAUFP8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gExT/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gFBT/IBQU/yAHDP8gGRf/I29R/yW7hP8lwYj/ITAn/yAJDf8gFRX/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAN
+        D/8gExT/IBIT/yASE/8gEhP/IBUV/yAMD/8gCg3/Ikk4/yWmdv8lwYj/JcKI/yJSPf8gBgv/IBUV/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAR
+        E/8gFRX/IS8m/yAND/8gFBT/IBQU/yASE/8gBgv/ISgi/ySHYf8mwYj/JbiC/yXAh/8jd1f/IAcM/yAU
+        Ff8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gFBX/IAgM/yE/Mf8luoT/IS4m/yAKDv8gCw7/IBIS/yJiSP8ltID/JcGI/yWyfv8lvob/JJht/yAR
+        E/8gERL/IBMU/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yATE/8gDxH/JJRq/ybGi/8loHL/IBcW/yE5Lf8lnXD/JsOJ/yW4gv8ls37/JbqD/yWw
+        ff8gJiD/IAwP/yAUFP8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IA8R/yASE/8gFxb/IAYL/yJSPv8lw4n/JbN+/yW8hf8loXP/JbeB/yW/hv8ltH//JbaA/yW2
+        gP8lv4f/IkM0/yAHDP8gFRX/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yAQEv8gHxz/IBIT/yAIDP8gGRj/JKZ2/yW7hP8ltoD/JbN//yW6g/8lt4H/JbWA/yW3
+        gf8ltH//JsSK/yNnTP8fBgr/IBUV/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gExT/IA0Q/yEpI/8khF//ICEd/yNlS/8lxIr/JbN//yW3gf8lwoj/JbuE/yW2
+        gP8lt4H/JbR//yXCiP8kiWP/IAsO/yATFP8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gFRX/IAQK/yNuUP8lvIX/Ja98/yW4gf8luYP/Jr6G/yNu
+        Uf8kjmb/JcCH/yW0f/8lvIT/JaZ2/yAcGf8gDhH/IBMU/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gERL/IBQU/ySldf8luoP/JbiC/yWt
+        e/8hNiv/HwAD/yAhHf8lsHz/JbiC/yW7hP8hNyv/IAgM/yAVFf8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBQU/yAJDf8hNSr/JcCH/yW7
+        g/8ltoD/JbaA/ySCXv8gJB//IlE9/yW7hP8ltYD/Jb6G/yNrT/8gCAz/IBQV/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yWX
+        bP8jdlb/JJBn/yW/hv8ltoD/JcSJ/yWwff8ltH//JbqD/yW2gP8ltoH/JcKJ/yJNOv8gBgv/IBUV/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBMU/yAM
+        D/8hLyf/IkIz/x8ABP8hOS3/Jb6F/yW2gP8ltH//JbiC/yW2gP8ltX//JbeB/yW2gP8luIL/JbWA/yEu
+        Jv8gCg7/IBQV/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBMT/yAQEv8gCg7/IBYW/yAIDP8jf1z/JcKI/yW0f/8ltoD/Jb+H/yW/h/8ltYD/JbaA/yW1
+        gP8lvoX/JKBy/yAWFv8gEBL/IBMU/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yAUFP8gExT/IA0P/yEpIv8ltYD/JbeB/yW7hP8iWUL/JINe/ybE
+        iv8lu4P/JbR//yW0f/8lw4n/I4Fd/yAJDf8gFBT/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gFRX/IAYL/yJoTf8m0ZP/I2dM/x8B
+        CP8gDQ//Ik07/yWpeP8lw4n/JbaA/yWyfv8mw4n/Il5F/yAFCv8gFRX/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yATFP8gDhD/ICId/yN3
+        Vv8gEBL/IBMT/yAUFP8gBwv/IBsZ/yN0Vf8mvIX/Jb6G/yW0f/8lu4T/ITwv/yAIDP8gFRX/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gERL/IAwP/yASE/8gExP/IBIT/yAVFf8gDxH/HwYL/yE3LP8kl2z/JcGI/yW9hf8lqXj/ICAc/yAN
+        EP8gFBT/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gExT/IBIT/yASE/8gEhP/IBIT/yATFP8gFRX/IAoN/x8PEf8iXET/Ja98/ybL
+        jv8kjmb/IAwP/yASE/8gExP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gFBT/IBIT/x8G
+        C/8hJB//JH5b/ybMkP8jdFT/HwMJ/yAUFf8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBUV/yANEP8gCAz/IUIz/yWsev8iWEL/IAcL/yAUFP8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBMU/yAUFf8gBwv/IBgX/yNoTf8hLCX/IA0Q/yATFP8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAVFf8gDxH/IAsO/yAbGf8gERL/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yASE/8gEhP/IBIT/yATFP8gExT/IBAR/yAS
+        E/8gEhP/IBIT/yASE/8gEhP/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+</value>
+  </data>
+  <metadata name="GunaMessageBox.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>194, 17</value>
+  </metadata>
+</root>

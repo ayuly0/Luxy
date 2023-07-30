@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33801.447
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxyBuilder", "Luxy\LuxyBuilder.csproj", "{B6B19C23-87AF-455C-B31D-D40C1C6AF9E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxyStub", "LuxyStub\LuxyStub.csproj", "{10000D58-641A-4ABE-9B45-92B0E4AC4E39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LuxyDecryptor", "LuxyDecryptor\LuxyDecryptor.csproj", "{18D53A24-61B2-4DE9-9525-E9EB8A789F6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6B19C23-87AF-455C-B31D-D40C1C6AF9E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B19C23-87AF-455C-B31D-D40C1C6AF9E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B19C23-87AF-455C-B31D-D40C1C6AF9E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B19C23-87AF-455C-B31D-D40C1C6AF9E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10000D58-641A-4ABE-9B45-92B0E4AC4E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10000D58-641A-4ABE-9B45-92B0E4AC4E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10000D58-641A-4ABE-9B45-92B0E4AC4E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10000D58-641A-4ABE-9B45-92B0E4AC4E39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D53A24-61B2-4DE9-9525-E9EB8A789F6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D53A24-61B2-4DE9-9525-E9EB8A789F6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D53A24-61B2-4DE9-9525-E9EB8A789F6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D53A24-61B2-4DE9-9525-E9EB8A789F6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6C3B5D5-6487-4321-AFFE-345FDA1F888B}
+	EndGlobalSection
+EndGlobal
