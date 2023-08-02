@@ -43,6 +43,16 @@ namespace Luxy
             this.block_av_sites_ts = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.label26 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2ToggleSwitch1 = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
+            this.fake_error_ts = new Guna.UI2.WinForms.Guna2ToggleSwitch();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.melt_ts = new Guna.UI2.WinForms.Guna2ToggleSwitch();
@@ -72,7 +82,7 @@ namespace Luxy
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.settings_clipper_btn = new Guna.UI2.WinForms.Guna2Button();
             this.label19 = new System.Windows.Forms.Label();
             this.clipper_ts = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.label20 = new System.Windows.Forms.Label();
@@ -127,13 +137,13 @@ namespace Luxy
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.fake_error_ts = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.label37 = new System.Windows.Forms.Label();
+            this.webhook_clipper_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.tabPage2.SuspendLayout();
             this.guna2Panel8.SuspendLayout();
+            this.guna2Panel11.SuspendLayout();
+            this.guna2Panel10.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel7.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
@@ -149,7 +159,6 @@ namespace Luxy
             this.tabPage6.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.guna2Panel10.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -222,6 +231,7 @@ namespace Luxy
             this.tabPage2.AutoScroll = true;
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
             this.tabPage2.Controls.Add(this.guna2Panel8);
+            this.tabPage2.Controls.Add(this.guna2Panel11);
             this.tabPage2.Controls.Add(this.guna2Panel10);
             this.tabPage2.Controls.Add(this.guna2Panel5);
             this.tabPage2.Controls.Add(this.guna2Panel7);
@@ -311,6 +321,160 @@ namespace Luxy
             this.label29.Size = new System.Drawing.Size(85, 19);
             this.label29.TabIndex = 7;
             this.label29.Text = "BlockAvSites";
+            // 
+            // guna2Panel11
+            // 
+            this.guna2Panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.guna2Panel11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
+            this.guna2Panel11.BorderRadius = 5;
+            this.guna2Panel11.Controls.Add(this.guna2Button10);
+            this.guna2Panel11.Controls.Add(this.guna2ToggleSwitch1);
+            this.guna2Panel11.Controls.Add(this.label35);
+            this.guna2Panel11.Controls.Add(this.label36);
+            this.guna2Panel11.Location = new System.Drawing.Point(10, 327);
+            this.guna2Panel11.Name = "guna2Panel11";
+            this.guna2Panel11.Size = new System.Drawing.Size(363, 103);
+            this.guna2Panel11.TabIndex = 13;
+            // 
+            // guna2Button10
+            // 
+            this.guna2Button10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button10.Animated = true;
+            this.guna2Button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.guna2Button10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.guna2Button10.BorderRadius = 3;
+            this.guna2Button10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.guna2Button10.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button10.ForeColor = System.Drawing.Color.White;
+            this.guna2Button10.Location = new System.Drawing.Point(287, 73);
+            this.guna2Button10.Name = "guna2Button10";
+            this.guna2Button10.Size = new System.Drawing.Size(73, 22);
+            this.guna2Button10.TabIndex = 11;
+            this.guna2Button10.Text = "Setting";
+            // 
+            // guna2ToggleSwitch1
+            // 
+            this.guna2ToggleSwitch1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ToggleSwitch1.Animated = true;
+            this.guna2ToggleSwitch1.AutoRoundedCorners = true;
+            this.guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
+            this.guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
+            this.guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.guna2ToggleSwitch1.Location = new System.Drawing.Point(315, 11);
+            this.guna2ToggleSwitch1.Name = "guna2ToggleSwitch1";
+            this.guna2ToggleSwitch1.Size = new System.Drawing.Size(35, 20);
+            this.guna2ToggleSwitch1.TabIndex = 9;
+            this.guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.White;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label35.Location = new System.Drawing.Point(20, 39);
+            this.label35.Margin = new System.Windows.Forms.Padding(20);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(171, 19);
+            this.label35.TabIndex = 7;
+            this.label35.Text = "Auto self delete after done";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
+            this.label36.Location = new System.Drawing.Point(20, 11);
+            this.label36.Margin = new System.Windows.Forms.Padding(20);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(74, 19);
+            this.label36.TabIndex = 7;
+            this.label36.Text = "Self-Delete";
+            // 
+            // guna2Panel10
+            // 
+            this.guna2Panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
+            this.guna2Panel10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
+            this.guna2Panel10.BorderRadius = 5;
+            this.guna2Panel10.Controls.Add(this.guna2Button5);
+            this.guna2Panel10.Controls.Add(this.fake_error_ts);
+            this.guna2Panel10.Controls.Add(this.label24);
+            this.guna2Panel10.Controls.Add(this.label34);
+            this.guna2Panel10.Location = new System.Drawing.Point(380, 218);
+            this.guna2Panel10.Name = "guna2Panel10";
+            this.guna2Panel10.Size = new System.Drawing.Size(363, 103);
+            this.guna2Panel10.TabIndex = 13;
+            // 
+            // guna2Button5
+            // 
+            this.guna2Button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button5.Animated = true;
+            this.guna2Button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.guna2Button5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.guna2Button5.BorderRadius = 3;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.Location = new System.Drawing.Point(287, 73);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.Size = new System.Drawing.Size(73, 22);
+            this.guna2Button5.TabIndex = 11;
+            this.guna2Button5.Text = "Setting";
+            // 
+            // fake_error_ts
+            // 
+            this.fake_error_ts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.fake_error_ts.Animated = true;
+            this.fake_error_ts.AutoRoundedCorners = true;
+            this.fake_error_ts.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
+            this.fake_error_ts.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
+            this.fake_error_ts.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.fake_error_ts.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.fake_error_ts.Cursor = System.Windows.Forms.Cursors.Default;
+            this.fake_error_ts.Location = new System.Drawing.Point(315, 11);
+            this.fake_error_ts.Name = "fake_error_ts";
+            this.fake_error_ts.Size = new System.Drawing.Size(35, 20);
+            this.fake_error_ts.TabIndex = 9;
+            this.fake_error_ts.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.fake_error_ts.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.fake_error_ts.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.fake_error_ts.UncheckedState.InnerColor = System.Drawing.Color.White;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label24.Location = new System.Drawing.Point(20, 39);
+            this.label24.Margin = new System.Windows.Forms.Padding(20);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(289, 19);
+            this.label24.TabIndex = 7;
+            this.label24.Text = "This Module will show fake error message box";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
+            this.label34.Location = new System.Drawing.Point(20, 11);
+            this.label34.Margin = new System.Windows.Forms.Padding(20);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(66, 19);
+            this.label34.TabIndex = 7;
+            this.label34.Text = "FakeError";
             // 
             // guna2Panel5
             // 
@@ -768,7 +932,7 @@ namespace Luxy
             this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.guna2Panel4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
             this.guna2Panel4.BorderRadius = 5;
-            this.guna2Panel4.Controls.Add(this.guna2Button1);
+            this.guna2Panel4.Controls.Add(this.settings_clipper_btn);
             this.guna2Panel4.Controls.Add(this.label19);
             this.guna2Panel4.Controls.Add(this.clipper_ts);
             this.guna2Panel4.Controls.Add(this.label20);
@@ -778,26 +942,26 @@ namespace Luxy
             this.guna2Panel4.Size = new System.Drawing.Size(363, 103);
             this.guna2Panel4.TabIndex = 11;
             // 
-            // guna2Button1
+            // settings_clipper_btn
             // 
-            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
-            this.guna2Button1.BorderRadius = 3;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(287, 73);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(73, 22);
-            this.guna2Button1.TabIndex = 11;
-            this.guna2Button1.Text = "Setting";
-            this.guna2Button1.Click += new System.EventHandler(this.setting_setealer_btn_Click);
+            this.settings_clipper_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.settings_clipper_btn.Animated = true;
+            this.settings_clipper_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.settings_clipper_btn.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.settings_clipper_btn.BorderRadius = 3;
+            this.settings_clipper_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.settings_clipper_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.settings_clipper_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.settings_clipper_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.settings_clipper_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.settings_clipper_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.settings_clipper_btn.ForeColor = System.Drawing.Color.White;
+            this.settings_clipper_btn.Location = new System.Drawing.Point(287, 73);
+            this.settings_clipper_btn.Name = "settings_clipper_btn";
+            this.settings_clipper_btn.Size = new System.Drawing.Size(73, 22);
+            this.settings_clipper_btn.TabIndex = 11;
+            this.settings_clipper_btn.Text = "Setting";
+            this.settings_clipper_btn.Click += new System.EventHandler(this.setting_clipper_btn_Click);
             // 
             // label19
             // 
@@ -1387,8 +1551,11 @@ namespace Luxy
             this.guna2GroupBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.guna2GroupBox1.BorderRadius = 5;
+            this.guna2GroupBox1.Controls.Add(this.webhook_clipper_tb);
             this.guna2GroupBox1.Controls.Add(this.webhook_ransomware_tb);
+            this.guna2GroupBox1.Controls.Add(this.label37);
             this.guna2GroupBox1.Controls.Add(this.webhook_stealer_url_tb);
+            this.guna2GroupBox1.Controls.Add(this.guna2Button1);
             this.guna2GroupBox1.Controls.Add(this.label30);
             this.guna2GroupBox1.Controls.Add(this.guna2Button7);
             this.guna2GroupBox1.Controls.Add(this.label2);
@@ -1402,7 +1569,7 @@ namespace Luxy
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(740, 116);
             this.guna2GroupBox1.TabIndex = 9;
-            this.guna2GroupBox1.Text = "Build";
+            this.guna2GroupBox1.Text = "Webhook";
             // 
             // webhook_ransomware_tb
             // 
@@ -1422,12 +1589,12 @@ namespace Luxy
             this.webhook_ransomware_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.webhook_ransomware_tb.ForeColor = System.Drawing.Color.White;
             this.webhook_ransomware_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.webhook_ransomware_tb.Location = new System.Drawing.Point(171, 70);
+            this.webhook_ransomware_tb.Location = new System.Drawing.Point(106, 63);
             this.webhook_ransomware_tb.Name = "webhook_ransomware_tb";
             this.webhook_ransomware_tb.PasswordChar = '\0';
             this.webhook_ransomware_tb.PlaceholderText = "";
             this.webhook_ransomware_tb.SelectedText = "";
-            this.webhook_ransomware_tb.Size = new System.Drawing.Size(484, 20);
+            this.webhook_ransomware_tb.Size = new System.Drawing.Size(549, 20);
             this.webhook_ransomware_tb.TabIndex = 0;
             // 
             // webhook_stealer_url_tb
@@ -1448,12 +1615,12 @@ namespace Luxy
             this.webhook_stealer_url_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.webhook_stealer_url_tb.ForeColor = System.Drawing.Color.White;
             this.webhook_stealer_url_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.webhook_stealer_url_tb.Location = new System.Drawing.Point(171, 45);
+            this.webhook_stealer_url_tb.Location = new System.Drawing.Point(106, 38);
             this.webhook_stealer_url_tb.Name = "webhook_stealer_url_tb";
             this.webhook_stealer_url_tb.PasswordChar = '\0';
             this.webhook_stealer_url_tb.PlaceholderText = "";
             this.webhook_stealer_url_tb.SelectedText = "";
-            this.webhook_stealer_url_tb.Size = new System.Drawing.Size(484, 20);
+            this.webhook_stealer_url_tb.Size = new System.Drawing.Size(549, 20);
             this.webhook_stealer_url_tb.TabIndex = 0;
             // 
             // label30
@@ -1461,12 +1628,12 @@ namespace Luxy
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label30.Location = new System.Drawing.Point(8, 70);
+            this.label30.Location = new System.Drawing.Point(8, 63);
             this.label30.Margin = new System.Windows.Forms.Padding(20);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(157, 19);
+            this.label30.Size = new System.Drawing.Size(94, 19);
             this.label30.TabIndex = 4;
-            this.label30.Text = "Webhook Ransomeware";
+            this.label30.Text = "Ransomeware";
             // 
             // guna2Button7
             // 
@@ -1482,7 +1649,7 @@ namespace Luxy
             this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.Location = new System.Drawing.Point(661, 69);
+            this.guna2Button7.Location = new System.Drawing.Point(661, 62);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.Size = new System.Drawing.Size(72, 22);
             this.guna2Button7.TabIndex = 5;
@@ -1494,12 +1661,12 @@ namespace Luxy
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(8, 45);
+            this.label2.Location = new System.Drawing.Point(8, 38);
             this.label2.Margin = new System.Windows.Forms.Padding(20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(113, 19);
+            this.label2.Size = new System.Drawing.Size(50, 19);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Webhook Stealer";
+            this.label2.Text = "Stealer";
             // 
             // check_webhook_btn
             // 
@@ -1515,7 +1682,7 @@ namespace Luxy
             this.check_webhook_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
             this.check_webhook_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.check_webhook_btn.ForeColor = System.Drawing.Color.White;
-            this.check_webhook_btn.Location = new System.Drawing.Point(661, 44);
+            this.check_webhook_btn.Location = new System.Drawing.Point(661, 37);
             this.check_webhook_btn.Name = "check_webhook_btn";
             this.check_webhook_btn.Size = new System.Drawing.Size(72, 22);
             this.check_webhook_btn.TabIndex = 5;
@@ -1791,82 +1958,64 @@ namespace Luxy
             this.guna2PictureBox1.TabIndex = 8;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2Panel10
+            // guna2Button1
             // 
-            this.guna2Panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
-            this.guna2Panel10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
-            this.guna2Panel10.BorderRadius = 5;
-            this.guna2Panel10.Controls.Add(this.guna2Button5);
-            this.guna2Panel10.Controls.Add(this.fake_error_ts);
-            this.guna2Panel10.Controls.Add(this.label24);
-            this.guna2Panel10.Controls.Add(this.label34);
-            this.guna2Panel10.Location = new System.Drawing.Point(380, 218);
-            this.guna2Panel10.Name = "guna2Panel10";
-            this.guna2Panel10.Size = new System.Drawing.Size(363, 103);
-            this.guna2Panel10.TabIndex = 13;
+            this.guna2Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.guna2Button1.BorderRadius = 3;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(661, 88);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(72, 22);
+            this.guna2Button1.TabIndex = 5;
+            this.guna2Button1.Text = "Check";
+            this.guna2Button1.Click += new System.EventHandler(this.check_webhook_btn_Click);
             // 
-            // guna2Button5
+            // label37
             // 
-            this.guna2Button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Button5.Animated = true;
-            this.guna2Button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.guna2Button5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
-            this.guna2Button5.BorderRadius = 3;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(287, 73);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(73, 22);
-            this.guna2Button5.TabIndex = 11;
-            this.guna2Button5.Text = "Setting";
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label37.Location = new System.Drawing.Point(8, 89);
+            this.label37.Margin = new System.Windows.Forms.Padding(20);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(52, 19);
+            this.label37.TabIndex = 4;
+            this.label37.Text = "Clipper";
             // 
-            // fake_error_ts
+            // webhook_clipper_tb
             // 
-            this.fake_error_ts.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.fake_error_ts.Animated = true;
-            this.fake_error_ts.AutoRoundedCorners = true;
-            this.fake_error_ts.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
-            this.fake_error_ts.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
-            this.fake_error_ts.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.fake_error_ts.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.fake_error_ts.Cursor = System.Windows.Forms.Cursors.Default;
-            this.fake_error_ts.Location = new System.Drawing.Point(315, 11);
-            this.fake_error_ts.Name = "fake_error_ts";
-            this.fake_error_ts.Size = new System.Drawing.Size(35, 20);
-            this.fake_error_ts.TabIndex = 9;
-            this.fake_error_ts.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
-            this.fake_error_ts.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
-            this.fake_error_ts.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.fake_error_ts.UncheckedState.InnerColor = System.Drawing.Color.White;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label24.Location = new System.Drawing.Point(20, 39);
-            this.label24.Margin = new System.Windows.Forms.Padding(20);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(289, 19);
-            this.label24.TabIndex = 7;
-            this.label24.Text = "This Module will show fake error message box";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Nirmala UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
-            this.label34.Location = new System.Drawing.Point(20, 11);
-            this.label34.Margin = new System.Windows.Forms.Padding(20);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(66, 19);
-            this.label34.TabIndex = 7;
-            this.label34.Text = "FakeError";
+            this.webhook_clipper_tb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.webhook_clipper_tb.Animated = true;
+            this.webhook_clipper_tb.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.webhook_clipper_tb.BorderRadius = 3;
+            this.webhook_clipper_tb.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.webhook_clipper_tb.DefaultText = "";
+            this.webhook_clipper_tb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.webhook_clipper_tb.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.webhook_clipper_tb.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.webhook_clipper_tb.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.webhook_clipper_tb.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.webhook_clipper_tb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.webhook_clipper_tb.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.webhook_clipper_tb.ForeColor = System.Drawing.Color.White;
+            this.webhook_clipper_tb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.webhook_clipper_tb.Location = new System.Drawing.Point(106, 89);
+            this.webhook_clipper_tb.Name = "webhook_clipper_tb";
+            this.webhook_clipper_tb.PasswordChar = '\0';
+            this.webhook_clipper_tb.PlaceholderText = "";
+            this.webhook_clipper_tb.SelectedText = "";
+            this.webhook_clipper_tb.Size = new System.Drawing.Size(549, 20);
+            this.webhook_clipper_tb.TabIndex = 0;
             // 
             // BuilderForm
             // 
@@ -1887,6 +2036,10 @@ namespace Luxy
             this.tabPage2.ResumeLayout(false);
             this.guna2Panel8.ResumeLayout(false);
             this.guna2Panel8.PerformLayout();
+            this.guna2Panel11.ResumeLayout(false);
+            this.guna2Panel11.PerformLayout();
+            this.guna2Panel10.ResumeLayout(false);
+            this.guna2Panel10.PerformLayout();
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
             this.guna2Panel7.ResumeLayout(false);
@@ -1913,8 +2066,6 @@ namespace Luxy
             this.guna2Panel9.ResumeLayout(false);
             this.guna2Panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.guna2Panel10.ResumeLayout(false);
-            this.guna2Panel10.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1942,7 +2093,7 @@ namespace Luxy
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button settings_clipper_btn;
         private System.Windows.Forms.Label label19;
         private Guna.UI2.WinForms.Guna2ToggleSwitch clipper_ts;
         private System.Windows.Forms.Label label20;
@@ -2023,6 +2174,14 @@ namespace Luxy
         private Guna.UI2.WinForms.Guna2ToggleSwitch fake_error_ts;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label34;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel11;
+        private Guna.UI2.WinForms.Guna2Button guna2Button10;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private Guna.UI2.WinForms.Guna2TextBox webhook_clipper_tb;
+        private System.Windows.Forms.Label label37;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
 

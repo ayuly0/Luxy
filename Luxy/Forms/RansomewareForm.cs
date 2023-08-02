@@ -11,11 +11,20 @@ namespace Luxy
             InitializeComponent();
         }
 
-        public string[] Ransomware_settings
+        public string[] Ransomware_settings_string
         {
             get
             {
                 string[] settings = { encrypt_extension_tb.Text, files_extension_encrypt.Text, readme_tb.Text };
+                return settings;
+            }
+        }
+
+        public bool[] Ransomware_settings_bool
+        {
+            get
+            {
+                bool[] settings = { show_readme_ts.Checked };
                 return settings;
             }
         }

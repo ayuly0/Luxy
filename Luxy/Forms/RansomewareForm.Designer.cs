@@ -36,6 +36,7 @@ namespace Luxy
             this.guna2BorderlessForm2 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GroupBox3 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.show_readme_ts = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.build_decryptor_btn = new Guna.UI2.WinForms.Guna2Button();
             this.readme_tb = new Guna.UI2.WinForms.Guna2TextBox();
             this.files_extension_encrypt = new Guna.UI2.WinForms.Guna2TextBox();
@@ -81,7 +82,7 @@ namespace Luxy
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 32);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(800, 448);
+            this.guna2Panel3.Size = new System.Drawing.Size(800, 457);
             this.guna2Panel3.TabIndex = 19;
             // 
             // guna2GroupBox3
@@ -89,6 +90,7 @@ namespace Luxy
             this.guna2GroupBox3.BackColor = System.Drawing.Color.Transparent;
             this.guna2GroupBox3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(32)))), ((int)(((byte)(37)))));
             this.guna2GroupBox3.BorderRadius = 5;
+            this.guna2GroupBox3.Controls.Add(this.show_readme_ts);
             this.guna2GroupBox3.Controls.Add(this.build_decryptor_btn);
             this.guna2GroupBox3.Controls.Add(this.readme_tb);
             this.guna2GroupBox3.Controls.Add(this.files_extension_encrypt);
@@ -104,9 +106,27 @@ namespace Luxy
             this.guna2GroupBox3.ForeColor = System.Drawing.Color.White;
             this.guna2GroupBox3.Location = new System.Drawing.Point(0, 0);
             this.guna2GroupBox3.Name = "guna2GroupBox3";
-            this.guna2GroupBox3.Size = new System.Drawing.Size(800, 448);
+            this.guna2GroupBox3.Size = new System.Drawing.Size(800, 457);
             this.guna2GroupBox3.TabIndex = 9;
             this.guna2GroupBox3.Text = "Ransomware";
+            // 
+            // show_readme_ts
+            // 
+            this.show_readme_ts.Animated = true;
+            this.show_readme_ts.AutoRoundedCorners = true;
+            this.show_readme_ts.Checked = true;
+            this.show_readme_ts.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
+            this.show_readme_ts.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
+            this.show_readme_ts.CheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.show_readme_ts.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.show_readme_ts.Location = new System.Drawing.Point(122, 181);
+            this.show_readme_ts.Name = "show_readme_ts";
+            this.show_readme_ts.Size = new System.Drawing.Size(33, 20);
+            this.show_readme_ts.TabIndex = 10;
+            this.show_readme_ts.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.show_readme_ts.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
+            this.show_readme_ts.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
+            this.show_readme_ts.UncheckedState.InnerColor = System.Drawing.Color.White;
             // 
             // build_decryptor_btn
             // 
@@ -122,7 +142,7 @@ namespace Luxy
             this.build_decryptor_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(183)))), ((int)(((byte)(37)))));
             this.build_decryptor_btn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.build_decryptor_btn.ForeColor = System.Drawing.Color.White;
-            this.build_decryptor_btn.Location = new System.Drawing.Point(686, 423);
+            this.build_decryptor_btn.Location = new System.Drawing.Point(686, 428);
             this.build_decryptor_btn.Name = "build_decryptor_btn";
             this.build_decryptor_btn.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.build_decryptor_btn.Size = new System.Drawing.Size(111, 22);
@@ -265,13 +285,13 @@ namespace Luxy
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(25)))), ((int)(((byte)(29)))));
-            this.ClientSize = new System.Drawing.Size(800, 480);
+            this.ClientSize = new System.Drawing.Size(800, 489);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(800, 480);
-            this.MinimumSize = new System.Drawing.Size(800, 460);
+            this.MaximumSize = new System.Drawing.Size(800, 489);
+            this.MinimumSize = new System.Drawing.Size(800, 489);
             this.Name = "RansomewareForm";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -300,5 +320,6 @@ namespace Luxy
         private Guna.UI2.WinForms.Guna2TextBox readme_tb;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Button build_decryptor_btn;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch show_readme_ts;
     }
 }

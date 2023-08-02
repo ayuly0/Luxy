@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
+using System.Diagnostics;
 
 namespace LuxyStub.Components.Utilities
 {
@@ -72,6 +73,23 @@ namespace LuxyStub.Components.Utilities
             {
                 Console.WriteLine(e);
             }
+        }
+
+        internal static void SelfDelete(int delay, bool exit = true)
+        {
+            Process.Start(new ProcessStartInfo()
+            {
+                Arguments = $"/C choice /C Y /N /D Y /T {delay} & Del \"" + Assembly.GetExecutingAssembly().Location + "\"",
+                WindowStyle = ProcessWindowStyle.Hidden,
+                CreateNoWindow = true,
+                FileName = "cmd.exe"
+            });
+
+            if (exit)
+            {
+                Environment.Exit(1);
+            }
+
         }
     }
 }

